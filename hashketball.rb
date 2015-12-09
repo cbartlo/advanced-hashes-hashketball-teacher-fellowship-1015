@@ -141,8 +141,10 @@ end
 
 def num_points_scored(pname)
   the_hash = game_hash()
-  the_hash.each do |team|
-    
+  the_hash.each do |team, value|
+    value[:players].each do |key, item|
+      puts key
+    end
   end
 
 end
